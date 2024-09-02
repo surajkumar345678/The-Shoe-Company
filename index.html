@@ -6,11 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>The Shoe Company</title>
         <link rel="stylesheet" href="output.css">
+        <script src="./script.js" defer></script>
     </head>
 
     <body class="bg-black text-white">
         <header
-            class="flex items-center justify-between fixed w-full left-[50%] -translate-x-[50%] section-container bg-black/70 backdrop-blur-sm z-10">
+            class="flex items-center justify-between fixed w-full left-[50%] -translate-x-[50%] section-container bg-black/70 backdrop-blur-sm z-10 open-menu">
             <a href="#">
                 <img class="w-24 md:w-32" src="./images/logo.png" alt="logo">
             </a>
@@ -21,7 +22,7 @@
                 <a href="#testimonials">Testimonials</a>
                 <a href="#contact">Contact Us</a>
             </nav>
-            <button class="text-5xl md:hidden">☰</button>
+            <button id="hamburger-menu" class="text-5xl md:hidden open-menu:text-blue-700 ">☰</button>
 
         </header>
         <section id="hero"
@@ -137,7 +138,7 @@
                 <a href="#">
                     <img class="w-12" src="./images/logo.png" alt="logo">
                 </a>
-                <p>Made with 🤍 By Suraj Kumar</p>
+                <p>Made with <span id="favourite" class="cursor-pointer">🤍</span> By Suraj Kumar</p>
             </div>
         </footer>
 
